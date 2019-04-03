@@ -3,3 +3,43 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background: #00028c;
+  height: 100vh;
+
+  display: flex;
+}
+
+.memory-game{
+  height: 640px;
+  width: 640px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: auto;
+}
+
+.memory-card{
+  position: relative;
+  height: calc(33.333% - 10px);
+  width: calc(25% - 10px);
+  margin: 5px;
+  transition: transform .4s;
+}
+
+.memory-card:active{
+  transform: scale(.90);
+}
+
+.front-face, .back-face{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+
+  background: #1c7ccc;
+
+
+}
